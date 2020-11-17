@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
+import ColorScreen from "./Screen/ColorScreen";
 import CounterScreen from "./Screen/CounterScreen";
 
 export default function App() {
@@ -8,7 +9,8 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-      <CounterScreen />
+      {/* <CounterScreen /> */}
+      <ColorScreen />
     </View>
   );
 }
