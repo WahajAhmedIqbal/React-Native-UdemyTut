@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import ColorScreen from "./Screen/ColorScreen";
 import CounterScreen from "./Screen/CounterScreen";
 
