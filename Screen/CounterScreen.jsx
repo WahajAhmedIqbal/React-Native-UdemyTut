@@ -5,17 +5,15 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
       return { ...state, count: state.count + action.payload };
-      break;
     case "decreament":
       return { ...state, count: state.count - action.payload };
-      break;
     default:
-      break;
+      return state;
   }
 };
 
 const CounterScreen = () => {
-  const [state, dispatch] = useReducer(reducer, { counter: 1 });
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
   return (
     <View>
       <Button
